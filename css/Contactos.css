@@ -1,0 +1,195 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #404145;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+/* Estilos del header */
+main header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 33px;
+  align-items: center;
+}
+
+main header nav .links {
+  font-size: 18px;
+  display: flex;
+  gap: 50px;
+}
+
+main header nav .links a:hover {
+  color: #379911;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  padding: 8px 13px;
+  color: #404145;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+section {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* --------------- contenedor 01 ------------------------ */
+.contenedor01 {
+  display: flex;
+  justify-content: center;
+}
+.contenedor01 p {
+  position: absolute; /* Permite posicionar el texto encima de la imagen */
+  top: 30%; /* Centrado vertical */
+  left: 27%; /* Centrado horizontal */
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Da visibilidad al texto */
+  width: 100px;
+}
+
+/* --------------- contenedor 02 ------------------------ */
+.contenedor02 {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.info h2 {
+  color: #379911;
+}
+.info p {
+  color: #6c6d71;
+  font-size: 17px;
+  width: 350px;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.formulario input {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 29px;
+}
+.formulario textarea {
+  width: 400px;
+  height: 100px;
+}
+.formulario button {
+  width: 80px;
+  height: 25px;
+  background-color: #379911;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}
+.formulario button:hover {
+  background-color: #358a0f;
+}
+
+.formulario h2 {
+  color: #379911;
+  font-size: 20px;
+}
+
+/* --------------- Banner6 ------------------------ */
+.banner6 {
+  background-color: #a2e488;
+  padding: 40px 0 40px;
+}
+
+.banner6 p {
+  text-align: center;
+}
+
+.contacto-general {
+  padding: 20px 0 20px;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.banner6 p {
+  font-weight: 100;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Da visibilidad al texto */
+}
+.banner6 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Da visibilidad al texto */
+}
+.facebook {
+  display: flex;
+  gap: 5px;
+}
+
+/* --------------- footer ------------------------ */
+.footer {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+footer .contenido-footer {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer .contenido-footer p {
+  align-content: center;
+  color: #404145;
+  font-size: 16px;
+}

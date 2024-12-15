@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #404145;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+/* Estilos del header */
+main header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 33px;
+  align-items: center;
+}
+
+main header nav .links {
+  font-size: 18px;
+  display: flex;
+  gap: 50px;
+}
+
+main header nav .links a:hover {
+  color: #379911;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  padding: 8px 13px;
+  color: #404145;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+
+/* --------------- Video ------------------------ */
+
+section {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.banner1,
+video {
+  border-radius: 20px;
+  display: flex;
+  object-fit: cover;
+}
+
+/* --------------- Banner 2 ------------------------ */
+.banner2 {
+  padding: 60px;
+  display: flex;
+  gap: 80px;
+}
+.proposito {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.texto1 {
+  color: #158a1f;
+  font-size: 24px;
+}
+.texto2 {
+  color: #6d6d6d;
+  font-size: 20px;
+}
+.MocheNorte {
+  font-weight: bold;
+}
+
+/* --------------- Banner 3 ------------------------ */
+.banner3 {
+  padding: 70px;
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  align-content: center;
+  margin-left: auto;
+  justify-content: center;
+}
+span {
+  color: #158a1f;
+  font-size: 18px;
+  font-weight: bold;
+}
+p {
+  color: #6d6d6d;
+  font-size: 22px;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+  margin-left: 80px;
+}
+/* --------------- Banner 4 ------------------------ */
+.banner4 {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+  font-weight: bold;
+}
+.imagen-frutos {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 35px;
+  font-weight: bold;
+}
+.imagen:hover {
+  transform: translateY(10px); /* Eleva la imagen 10px hacia arriba */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Agrega una sombra para mayor efecto */
+}
+.imagen {
+  border-radius: 10px;
+}
+/* --------------- Banner5 ------------------------ */
+.banner5 {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: bold;
+}
+/* --------------- Banner6 ------------------------ */
+.banner6 {
+  background-color: #a2e488;
+  padding: 40px 0 40px;
+}
+
+.banner6 p {
+  text-align: center;
+}
+
+.contacto-general {
+  padding: 20px 0 20px;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.banner6 p {
+  font-weight: 100;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Da visibilidad al texto */
+}
+.banner6 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Da visibilidad al texto */
+}
+.facebook {
+  display: flex;
+  gap: 5px;
+}
+
+/* --------------- footer ------------------------ */
+.footer {
+  background-color: #ffffff;
+  padding: 70px 0 70px;
+}
+
+footer .contenido-footer {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer .contenido-footer p {
+  align-content: center;
+  color: #404145;
+  font-size: 18px;
+}

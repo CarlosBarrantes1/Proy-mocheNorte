@@ -1,0 +1,319 @@
+/* Reseteo básico */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #404145;
+}
+
+body {
+  font-family: "inter", sans-serif;
+}
+
+/* Estilos del header */
+main header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 33px;
+  align-items: center;
+}
+
+main header nav .links {
+  font-size: 18px;
+  display: flex;
+  gap: 50px;
+}
+
+main header nav .links a:hover {
+  color: #379911;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  z-index: 1000;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.dropdown-content a {
+  padding: 8px 13px;
+  color: #404145;
+  display: block;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+section {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/* --------------- Contenedor 01 ------------------------ */
+
+.contenedor01 {
+  display: flex;
+  justify-content: center;
+}
+
+.texto1 {
+  position: absolute; /* Permite posicionar el texto encima de la imagen */
+  top: 42%; /* Centrado vertical */
+  left: 25%; /* Centrado horizontal */
+  color: white;
+  font-size: 65px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Da visibilidad al texto */
+  width: 650px;
+}
+.texto2 {
+  position: absolute; /* Permite posicionar el texto encima de la imagen */
+  top: 59%; /* Centrado vertical */
+  left: 25%; /* Centrado horizontal */
+  color: white;
+  font-size: 25px;
+  text-shadow: 2px 2px 4px rgba(1, 1, 1, 2.7); /* Da visibilidad al texto */
+}
+/* --------------- Contenedor 02 ------------------------ */
+.contenedor02 {
+  display: grid;
+  grid-template-rows: 1fr;
+  row-gap: 20px;
+  place-items: center;
+  margin-top: 150px;
+}
+.contenedor02 p {
+  color: #bbe75d;
+  font-size: 49px;
+  width: 700px;
+  text-align: center;
+}
+
+/* --------------- Contenedor 03 ------------------------ */
+.contenedor03 {
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.contenedor03 img {
+  border-radius: 15px;
+  width: 500px;
+  height: 350px;
+}
+.contenedor03 p {
+  font-size: 30px;
+  color: #bbe75d;
+  width: 350px;
+  text-align: center;
+}
+/* --------------- Contenedor 04 ------------------------ */
+.contenedor04 {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-top: 180px;
+  justify-content: center;
+  text-align: center;
+  gap: 40px;
+}
+.contenedor04 img {
+  width: 350px;
+  height: 430px;
+  border-radius: 15px;
+}
+.contenedor04 p {
+  color: #5b5c60;
+  font-size: 22px;
+  width: 370px;
+}
+.contenedor04 h4 {
+  color: #5b5c60;
+  font-size: 18px;
+  font-weight: 100;
+}
+.contenedor04 h5 {
+  color: #5b5c60;
+  font-size: 20px;
+  font-weight: 900;
+}
+.contenedor04 div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/* --------------- Contenedor 05 ------------------------ */
+.contenedor05 {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.contenedor05 p {
+  color: #5b5c60;
+  font-size: 20px;
+}
+
+/* --------------- Contenedor 06 ------------------------ */
+
+.contenedor06 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contenedor06 div {
+  width: 980px;
+}
+
+.contenedor06 div img {
+  height: 512px;
+}
+.contenedor06 img {
+  border-radius: 15px;
+  margin-bottom: 100px;
+}
+.contenedor06 p {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  color: #5b5c60;
+  font-size: 20px;
+  text-align: center;
+}
+
+/*---------------  Estilo del carrusel  ---------------*/
+.carousel {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.carousel-item img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*--------------- Botones de control --------------- */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-150%);
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel-control-prev {
+  left: 20px;
+}
+.carousel-control-next {
+  right: 20px;
+}
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: solid white;
+}
+.carousel-control-prev-icon::before {
+  border-width: 0 3px 3px 0;
+  transform: rotate(135deg);
+}
+.carousel-control-next-icon::before {
+  border-width: 0 3px 3px 0;
+  transform: rotate(-45deg);
+}
+/* --------------- Contenedor 07 ------------------------ */
+.contenedor07 {
+  background-color: #a2e488;
+  padding: 40px 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor07 h2 {
+  color: #ffffff;
+  font-size: 60px;
+  width: 700px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  padding: 80px;
+}
+.contacto-general {
+  padding: 20px 0 20px;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor07 p {
+  font-weight: 100;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.contenedor07 a {
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.facebook {
+  display: flex;
+  gap: 5px;
+}
+/* --------------- footer ------------------------ */
+.footer {
+  background-color: #ffffff;
+  padding: 40px;
+}
+
+footer .contenido-footer {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.footer .contenido-footer p {
+  align-content: center;
+  color: #404145;
+  font-size: 16px;
+}
