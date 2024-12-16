@@ -231,7 +231,7 @@ section {
 .carousel-control-next {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-180%);
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
